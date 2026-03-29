@@ -1,15 +1,17 @@
 # oh-my-harness-engineering
 
-Claude Code에서 사용하는 commands, hooks, agents 모음.
-프로젝트 단위로 이식하거나 전역으로 설치할 수 있다.
+나만의 하네스 엔지니어링 노하우를 집대성한 저장소.
+Claude Code 공식 확장 기능(Skills, Hooks, Subagents, Rules, MCP Configs)을 모아두고 프로젝트 단위로 이식한다.
 
 ## 구조
 
 ```
-commands/      → .claude/commands/   (슬래시 커맨드)
-hooks/         → .claude/hooks/      (자동 실행 훅)
-agents/        → .claude/agents/     (에이전트 정의)
-install.sh     → 설치 스크립트
+skills/<name>/SKILL.md      → .claude/skills/<name>/SKILL.md   (슬래시 커맨드)
+hooks/                      → settings.json hooks 섹션          (생명주기 자동화)
+agents/<name>/AGENT.md      → .claude/agents/<name>/AGENT.md   (커스텀 에이전트)
+rules/*.md                  → .claude/rules/*.md               (프로젝트 규칙)
+mcp-configs/                → .claude/.mcp.json                (외부 도구 연결)
+install.sh                  → 이식 스크립트
 ```
 
 ## 설치
@@ -20,11 +22,9 @@ install.sh     → 설치 스크립트
 # 전체 설치
 ./install.sh ~/source/my-project
 
-# commands만 설치
-./install.sh ~/source/my-project --commands
-
-# hooks만 설치
-./install.sh ~/source/my-project --hooks
+# 원하는 것만 골라서 설치
+./install.sh ~/source/my-project --skills
+./install.sh ~/source/my-project --agents --rules
 ```
 
 ### 전역 설치 (모든 프로젝트에서 사용)
@@ -33,7 +33,7 @@ install.sh     → 설치 스크립트
 ./install.sh --global
 ```
 
-## 포함된 Commands
+## 포함된 Skills
 
 | 커맨드 | 설명 |
 |--------|------|
@@ -43,6 +43,10 @@ install.sh     → 설치 스크립트
 
 (준비 중)
 
-## 포함된 Agents
+## 포함된 Subagents
+
+(준비 중)
+
+## 포함된 Rules
 
 (준비 중)
