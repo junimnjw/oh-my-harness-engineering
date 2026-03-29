@@ -130,6 +130,12 @@ typeset -A SELECTED_ITEMS=()
 
 current_category=""
 
+# 인자가 없으면 사용법 출력 후 종료
+if [[ $# -eq 0 ]]; then
+    print_usage
+    exit 1
+fi
+
 for arg in "$@"; do
     case "$arg" in
         --skills|--hooks|--agents|--rules|--mcp)
