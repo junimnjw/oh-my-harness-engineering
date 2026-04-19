@@ -1,0 +1,8 @@
+{
+  "host": "github.mycorp.com",
+  "owner": "my-org",
+  "repo": "team-weekly",
+  "category": "Weekly Report",
+  "title_format": "주간 보고 — {YYYY-MM-DD} ({author})",
+  "author": "홍길동"
+}

@@ -45,7 +45,9 @@ install.sh                  → 이식 스크립트
 
 ## 포함된 Subagents
 
-(준비 중)
+| 이름 | 설명 |
+|------|------|
+| `weekly-report` | 주간 업무 메모를 정해진 포맷으로 정리하여 GitHub Enterprise Discussion에 게시 |
 
 ## 포함된 Rules
 
