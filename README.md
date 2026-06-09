@@ -50,3 +50,4 @@ install.sh                  → 이식 스크립트
 ## 포함된 Rules
 
 (준비 중)
+## Test Update - 2026-06-09
